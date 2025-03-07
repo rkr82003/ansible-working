@@ -1,0 +1,9 @@
+play.yml
+
+- hosts: localhost
+  tasks:
+    - name: Test that my module works
+      github_repo:
+      register: result
+
+    - debug: var=result
